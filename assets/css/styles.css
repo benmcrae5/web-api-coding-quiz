@@ -1,0 +1,92 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    color: black;
+    font-size: 1.25em;
+}
+header {
+    background-color: rgb(110, 53, 163);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: rgb(199, 172, 23);
+    font-size: 3.25em;
+    font-weight: bold;
+    margin: 15px 35px 15px 0;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li {
+    text-decoration: none;
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0 20px;
+    color: black;
+    padding: 5px;
+}
+
+header ul li:hover {
+    border-bottom: solid 3px black;
+}
+
+header ul li a:hover {
+    color:white;
+}
+
+body {
+    background: rgb(152,150,181);
+    background: 
+        linear-gradient(145deg,
+            rgba(152,150,181,1) 0%,
+            rgba(133,133,237,1) 40%,
+            rgba(74,184,207,1) 88%);
+    background-repeat: no-repeat;
+}
+
+.page-start {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+    margin: 50px auto;
+    width: 50%;
+}
+
+.page-start>* {
+    margin: 10px auto;
+}
+
+.page-start h2 {
+    font-size: 3em;
+    border-bottom: 3px solid;
+}
+
+.page-start-instruct p {
+    margin: .5em;
+    font-size: 1.5em;
+}
+
+#start-btn {
+    background-color: rgb(18, 175, 18);
+    font-size: 2em;
+    padding: 15px;
+    border-radius: 2.5em;
+}
