@@ -11,21 +11,31 @@
         <h1>Ben's Coding Quiz</h1>
         <ul>
             <li>
-                <a href="">High Scores</a>
+                <a href="" class="score">High Scores</a>
             </li>
             <li>
-                <a href="">Ben's Portfolio</a>
+                <a href="https://benmcrae5.github.io/ben-mcrae-digifolio/">Ben's Portfolio</a>
             </li>
         </ul>    
     </header>
     <main>
-        <section class="page-start">
-            <h2>Coding Quiz Challenge!</h2>
-            <div class="page-start-instruct">    
-                <p>Try to answer the following code-related questions withing the time limit.</p>
-                <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        
+        <section id="main-content">
+            <div class="page-start removable">
+                <h2>Coding Quiz Challenge!</h2>
+                
+                <div class="page-start-instruct">    
+                    <p>Try to answer the following code-related questions within the time limit.</p>
+                    <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                </div>
+
+                <button id="start-btn">Start Quiz</button>
             </div>
-            <button id="start-btn">Start Quiz</button>
+            
+            <div class="supp-content">
+                <h3 class="timer"><span id="timer"></span></h3>
+                <h4 class="game-msg"></h4>
+            </div>
         </section>
     </main>
     <footer>

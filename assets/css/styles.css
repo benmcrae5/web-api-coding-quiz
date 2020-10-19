@@ -12,6 +12,7 @@ html {
 a {
     color: black;
     font-size: 1.25em;
+    padding: 5px;
 }
 header {
     background-color: rgb(110, 53, 163);
@@ -42,12 +43,9 @@ header ul li {
     padding: 5px;
 }
 
-header ul li:hover {
-    border-bottom: solid 3px black;
-}
-
 header ul li a:hover {
     color:white;
+    border-bottom: solid 3px black;
 }
 
 body {
@@ -58,6 +56,11 @@ body {
             rgba(133,133,237,1) 40%,
             rgba(74,184,207,1) 88%);
     background-repeat: no-repeat;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .page-start {
@@ -89,4 +92,97 @@ body {
     font-size: 2em;
     padding: 15px;
     border-radius: 2.5em;
+}
+
+.quelement, .final-screen, .scores {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+}
+
+.quelement {
+    text-align: left;
+}
+
+.quelement h3 {
+    font-size: 2em;
+    max-width: 75%;
+}
+
+.quelement button {
+    background-color: rgb(212, 182, 97);
+    font-size: 1.25em;
+    padding: 5px;
+    border-radius: 1em;
+    min-width: 20%;
+    width: auto;
+}
+
+.quelement button:hover {
+    background-color: greenyellow;
+}
+
+.final-screen h3 {
+    font-size: 3em;
+}
+
+.final-screen h4 {
+    font-size: 5em;
+}
+
+.final-screen button, .scores button {
+    background-color: rgb(157, 39, 187);
+    font-size: 1.25em;
+    padding: 10px;
+    border-radius: 1em;
+    min-width: auto;
+    width: 20%;
+}
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+        margin: 0 auto;
+    }
+
+    .page-start {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        justify-items: center;
+        text-align: center;
+        margin: 25px auto;
+        width: 80%;
+    }
+    .page-start h2 {
+        font-size: 2.5em;
+    }
+
+    .quelement button {
+        background-color: rgb(212, 182, 97);
+        font-size: 1.25em;
+        margin: 5px auto;
+        border-radius: 1em;
+        min-width: 50%;
+        width: auto;
+    }
+
+    .final-screen button, .scores button {
+        margin: 10px auto;
+        width: 50%;
+    }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
 }
